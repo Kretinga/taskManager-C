@@ -55,7 +55,6 @@ int listProc()
 
 int killProc(int pid)
 {
-    // Enviar señal para cerrar el PID
     int result = kill(pid, SIGKILL);
 
     if (result == 0)
